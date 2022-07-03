@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormPemesanansTable extends Migration
+class CreateProdukTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateFormPemesanansTable extends Migration
      */
     public function up()
     {
-        Schema::create('form_pemesanans', function (Blueprint $table) {
-            $table->id();
+        Schema::create('produk', function (Blueprint $table) {
+            $table->id('idproduk');
+            $table->string('nama_produk', 45);
+            $table->decimal('hargaproduk', 6,0,true);
+            $table->integer('jumlahproduk', false,true);
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateFormPemesanansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form_pemesanans');
+        Schema::dropIfExists('produk');
     }
 }
