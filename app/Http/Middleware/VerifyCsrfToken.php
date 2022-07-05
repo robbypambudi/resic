@@ -15,6 +15,7 @@ class VerifyCsrfToken extends Middleware
         //
         'akun/*',
         'formpemesanan',
-        'formpesanan/*'
+        'formpesanan/*',
+        'checkout/*'
     ];
 }
