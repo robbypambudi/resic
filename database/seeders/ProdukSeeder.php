@@ -27,17 +27,17 @@ class ProdukSeeder extends Seeder
             'jumlahproduk' => '36',
         ]);
         DB::table('produk')->insert([
-            'nama_produk' => 'Deterjen 1 Kg',
+            'nama_produk' => 'Pembersih Kaca 1 L',
             'hargaproduk' => '12500',
             'jumlahproduk' => '14',
         ]);
         DB::table('produk')->insert([
-            'nama_produk' => 'Parfum laundry 500Ml',
+            'nama_produk' => 'Disinfektan 500ML',
             'hargaproduk' => '8000',
             'jumlahproduk' => '5',
         ]);
         DB::table('produk')->insert([
-            'nama_produk' => 'Pembersih keramik 3L',
+            'nama_produk' => 'Pembersih Lantai Ruangan 3L',
             'hargaproduk' => '21000',
             'jumlahproduk' => '14',
         ]);
