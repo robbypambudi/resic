@@ -46,6 +46,7 @@ Route::post("/signup", [SignupController::class, 'signup'])->middleware('guest')
 Route::get("/formpemesanan", [FormPemesananController::class, 'index'])->middleware('auth');
 Route::post("/formpemesanan", [FormPemesananController::class, 'store'])->middleware('auth');
 Route::post("/formpesanan/{id}", [FormPemesananController::class, 'produk'])->middleware('auth');
+Route::post("/checkout/{id}", [FormPemesananController::class, 'checkout'])->middleware('auth');
 
 // Akun 
 Route::get("/akun", [AkunController::class, 'index'])->middleware('auth');
