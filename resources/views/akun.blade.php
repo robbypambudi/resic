@@ -69,7 +69,9 @@
                         <td>{{$item->jumlah_produk_pesanan}}</td>
                         <td>{{$item->total_pembayaran}}</td>
                         <td>{{$item->status_pembayaran}}</td>
-                        <td>Ulasan</td>
+                        <td>
+                            <a href="/ulasan/{{$item->id}}" class="text-blue-600">Ulasan</a>
+                        </td>
                     </tr>
                     @endforeach
                     @else
