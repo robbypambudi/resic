@@ -27,6 +27,7 @@ class FormPemesananController extends Controller
             'paket_layanan_id_paket' => $request->input('paket'),
             'waktu_pemesanan' => date('y/m/d'),
             'alamat' => $request->input('alamat'),
+            'status_pesanan' => 'N',
         ]);
         
 
@@ -38,14 +39,38 @@ class FormPemesananController extends Controller
 
     public function produk(Request $request){
         $id = $request->id;
+        $id_user = auth()->id();
+        $akun = Akun::find($id_user);
 
         $pesanan = FormPemesanan::find($id);
         // dd($pesanan); 
         
         $pesanan->produk_idproduk = $request->produk1;
         $pesanan->jumlah_produk_pesanan = $request->produk1jumlah;
+        
+        // dd($pesanan->layanan->nama_paketlayanan);
+        // Calculate Harga
+        
+        $harga = 0;
+        $harga += $pesanan->layanan->tarif_paket;
+        if($pesanan->jumlah_produk_pesanan != null){
+            $harga += ($pesanan->produk->hargaproduk * $pesanan->jumlah_produk_pesanan);
+        }
+        $pesanan->total_pembayaran = $harga;
         $pesanan->update();
+        // dd($harga);
+        $currentPesanan = FormPemesanan::find($id);
+        return view('checkout', ['pesanan' => $currentPesanan, 'akun' => $akun, 'harga' =>$harga, 'idpesanan' => $id]);
     }
 
+    public function checkout(Request $request){
+        $id = $request->id;
+        $pesanan = FormPemesanan::find($id);
+        $pesanan->cara_pembayaran = $request->input('pembayaran');
+        $pesanan->status_pesanan = 'Y';
+        $pesanan->update();
 
+        return view('index');
+    }
 }
+
