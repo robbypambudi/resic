@@ -6,7 +6,7 @@
             <a href="/paket" class="cursor-pointer hover:text-blue-600 font-secondary">Paket</a>
             <a href="/tentang-kami" class="cursor-pointer hover:text-blue-600 font-secondary">Tentang Kami</a>
             @auth
-            <a class="cursor-pointer hover:text-blue-600 font-secondary">Akun</a>
+            <a href="/akun" class="cursor-pointer hover:text-blue-600 font-secondary">Akun</a>
             @endauth
 
         </div>
