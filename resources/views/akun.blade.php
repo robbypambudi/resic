@@ -61,10 +61,11 @@
                 <tbody>
                     @if($pesanan->count())
                     @foreach ($pesanan as $item)
-                    <tr>
-                        <td>{{$loop->iteration}}</td>
+                    <tr class="text-center mt-2">
+                        <td class="p-1">{{$loop->iteration}}</td>
                         <td>{{$item->waktu_pemesanan}}</td>
-                        <td>{{$item->paket_layanan_id_paket}}</td>
+                        <td>{{$item->layanan->nama_paketlayanan}}</td>
+                        <td>{{$item->produk->nama_produk}}</td>
                         <td>{{$item->jumlah_produk_pesanan}}</td>
                         <td>{{$item->total_pembayaran}}</td>
                         <td>{{$item->status_pembayaran}}</td>
