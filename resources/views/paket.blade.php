@@ -38,7 +38,7 @@
                 <h4 class="font-bold text-xl mt-4">Paket Sterilisasi B</h4>
                 <div class="h-6 inline-block font-bold mt-3">
                     <p class="align-top h-full">Rp.</p>
-                    <span class=" ml-6 font-bold h-full text-6xl ">250K</span>
+                    <span class=" ml-6 font-bold h-full text-6xl ">275K</span>
                 </div>
                 <p class="mt-20">General Cleaning (3 jam) +
                     ULV Fogging Disinfektan </p>
@@ -51,7 +51,7 @@
                 <h4 class="font-bold text-xl ">Paket Sterilisasi C</h4>
                 <div class="h-6 inline-block font-bold mt-3">
                     <p class="align-top h-full">Rp.</p>
-                    <span class=" ml-6 font-bold h-full text-6xl ">275K</span>
+                    <span class=" ml-6 font-bold h-full text-6xl ">350K</span>
                 </div>
                 <p class="mt-20">General Cleaning (4 jam) +
                     ULV Fogging Disinfektan </p>
