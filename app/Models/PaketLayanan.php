@@ -10,4 +10,6 @@ class PaketLayanan extends Model
     use HasFactory;
     protected $fillable = ['id_paket', 'durasi', 'tarif_paket', 'nama_paketlayanan'];
     protected $table    = 'paketlayanan';
+
+     protected $primaryKey = 'id_paket';
 }
