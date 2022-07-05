@@ -20,7 +20,7 @@ class CreatePenilaianTable extends Migration
             $table->foreign('user_id_user')->references('id')->on('users');
 
             $table->unsignedBigInteger('pesanan_idpesanan');
-            $table->foreign('pesanan_idpesanan')->references('idpesanan')->on('pesanan');
+            $table->foreign('pesanan_idpesanan')->references('id')->on('pesanan');
 
             $table->unsignedBigInteger('karyawan_idkaryawan_pembersih');
             $table->foreign('karyawan_idkaryawan_pembersih')->references('idkaryawan_pembersih')->on('karyawan');
