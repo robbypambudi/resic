@@ -6,6 +6,7 @@ use App\Http\Controllers\SignupController;
 use App\Http\Controllers\FormPemesananController;
 use App\Http\Controllers\AkunController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\UlasanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,7 @@ Route::get("/formpemesanan", [FormPemesananController::class, 'index'])->middlew
 Route::post("/formpemesanan", [FormPemesananController::class, 'store'])->middleware('auth');
 Route::post("/formpesanan/{id}", [FormPemesananController::class, 'produk'])->middleware('auth');
 Route::post("/checkout/{id}", [FormPemesananController::class, 'checkout'])->middleware('auth');
+Route::get("/formpesanan/gajadi/{id}", [FormPemesananController::class, 'gajadi'])->middleware('auth');
 
 // Akun 
 Route::get("/akun", [AkunController::class, 'index'])->middleware('auth');
@@ -54,3 +56,7 @@ Route::post("/akun/{id}", [AkunController::class, 'update'])->middleware('auth')
 
 // Produk
 Route::get("/produk", [ProdukController::class, 'index']);
+
+// Ulasan
+Route::get("/ulasan/{id}", [UlasanController::class, 'index'])->middleware('auth');
+Route::post("/ulasan/{id}", [UlasanController::class, 'store'])->middleware('auth');
