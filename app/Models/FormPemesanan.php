@@ -13,4 +13,12 @@ class FormPemesanan extends Model
                             'status_pembayaran', 'waktu_pemesanan', 'alamat'];
     protected $table = 'pesanan';
 
+    public function layanan(){
+        return $this->belongsTo(PaketLayanan::class, 'paket_layanan_id_paket');
+    }
+
+
+    public function produk(){
+        return $this->belongsTo(Produk::class, 'produk_idproduk');
+    }
 }
