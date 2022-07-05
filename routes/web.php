@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
 use App\Http\Controllers\FormPemesananController;
+use App\Http\Controllers\AkunController;
+use App\Http\Controllers\ProdukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,9 @@ use App\Http\Controllers\FormPemesananController;
 |
 */
 
+Route::get("/home", function () {
+    return view("index");
+})->name('home');
 Route::get("/", function () {
     return view("index");
 })->name('home');
@@ -26,6 +31,7 @@ Route::get("/paket", function() {
 Route::get("/tentang-kami", function() {
     return view("tentang-kami");
 });
+
 
 // Route For Login
 Route::get("/login",[LoginController::class, 'index'])->middleware('guest')->name("login_home");
@@ -38,3 +44,12 @@ Route::post("/signup", [SignupController::class, 'signup'])->middleware('guest')
 
 // Form Pemesanan
 Route::get("/formpemesanan", [FormPemesananController::class, 'index'])->middleware('auth');
+Route::post("/formpemesanan", [FormPemesananController::class, 'store'])->middleware('auth');
+Route::post("/formpesanan/{id}", [FormPemesananController::class, 'produk'])->middleware('auth');
+
+// Akun 
+Route::get("/akun", [AkunController::class, 'index'])->middleware('auth');
+Route::post("/akun/{id}", [AkunController::class, 'update'])->middleware('auth');
+
+// Produk
+Route::get("/produk", [ProdukController::class, 'index']);
