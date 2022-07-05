@@ -72,5 +72,12 @@ class FormPemesananController extends Controller
 
         return view('index');
     }
+
+    public function gajadi(Request $request){
+        $id = $request->id;
+        $pesanan = FormPemesanan::find($id);
+        $pesanan->delete();
+        return view('index');
+    }
 }
 
