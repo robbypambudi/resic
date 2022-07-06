@@ -22,7 +22,7 @@
                     <p class="align-top h-full">Rp.</p>
                     <span class=" ml-6 font-bold h-full text-6xl ">225K</span>
                 </div>
-                <p class="mt-20">General Cleaning (2 jam) +
+                <p class="mt-8">General Cleaning (2 jam) +
                     ULV Fogging Disinfektan </p>
                 <button type="button"
                     class="w-full mt-7 border-solid border-2 text-black bg-white hover:bg-blue-800  hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-1 mb-2 dark:bg-white dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
@@ -40,7 +40,7 @@
                     <p class="align-top h-full">Rp.</p>
                     <span class=" ml-6 font-bold h-full text-6xl ">275K</span>
                 </div>
-                <p class="mt-20">General Cleaning (3 jam) +
+                <p class="mt-8">General Cleaning (3 jam) +
                     ULV Fogging Disinfektan </p>
                 <button type="button"
                     class="w-full mt-7 border-solid border-2 text-white bg-blue-600 hover:bg-blue-800  hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-1 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
@@ -53,7 +53,7 @@
                     <p class="align-top h-full">Rp.</p>
                     <span class=" ml-6 font-bold h-full text-6xl ">350K</span>
                 </div>
-                <p class="mt-20">General Cleaning (4 jam) +
+                <p class="mt-8">General Cleaning (4 jam) +
                     ULV Fogging Disinfektan </p>
                 <button type="button"
                     class="w-full mt-7 border-solid border-2 text-black bg-white hover:bg-blue-800  hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-1 mb-2 dark:bg-white dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
