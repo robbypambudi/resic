@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+// Controler
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
 use App\Http\Controllers\FormPemesananController;
@@ -19,6 +21,7 @@ use App\Http\Controllers\UlasanController;
 |
 */
 
+
 Route::get("/home", function () {
     return view("index");
 })->name('home');
@@ -33,6 +36,7 @@ Route::get("/tentang-kami", function() {
     return view("tentang-kami");
 });
 
+/* Middlewere auth untuk user yang sudah login */
 
 // Route For Login
 Route::get("/login",[LoginController::class, 'index'])->middleware('guest')->name("login_home");

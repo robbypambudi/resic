@@ -93,8 +93,9 @@
                 <h2 class="font-bold font-primary text-7xl">Choose with Resic today</h2>
                 <p class="mt-10 text-xl">Rumah yang bersih terdapat kenyamanan keluarga anda
                 </p>
-                <button type="button"
+                {{-- <button type="button"
                     class="w-40 mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Daftar</button>
+                --}}
             </div>
             <img src={{URL("/image/resic.png")}}>
 

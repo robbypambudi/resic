@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+
     // Index
     public function index(){
         return view('login');
@@ -18,7 +19,7 @@ class LoginController extends Controller
         $credentials = $request->validate([
             'email' => ['required'],
             'password' => ['required'],
-        ]) ;
+        ]);
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();

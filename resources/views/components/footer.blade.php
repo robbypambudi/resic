@@ -14,20 +14,20 @@
                 All rights reserved.</p>
         </div>
         <div class="flex flex-col gap-y-2 font-secondary">
-            <a>Home</a>
-            <a>Paket</a>
-            <a>Tentang Kami </a>
-            <a>Contact</a>
+            <a href="/">Home</a>
+            <a href="/paket">Paket</a>
+            <a href="/tentang-kami">Tentang Kami </a>
+            <a href="#">Contact</a>
         </div>
         <div class="flex flex-col gap-y-2 font-secondary">
-            <a>Sale</a>
-            <a>Cashier</a>
-            <a>Store</a>
-            <a>Linkedin</a>
+            <a href="#">Sale</a>
+            <a href="#">Cashier</a>
+            <a href="#">Store</a>
+            <a href="#">Linkedin</a>
         </div>
         <div class="flex flex-col gap-y-2 font-secondary">
-            <a>Help & FAQ</a>
-            <a>Terms Of Service</a>
+            <a href="#">Help & FAQ</a>
+            <a href="#">Terms Of Service</a>
         </div>
     </div>
 </footer>

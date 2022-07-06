@@ -30,9 +30,9 @@
                     <h2 class="font-bold text-5xl">Get started with RESIC today
                     </h2>
                     <p class="mt-10">Put some dirt in your room, we'll clean it</p>
-                    <a type="submit" href="/signup"
+                    {{-- <a type="submit" href="/signup"
                         class="w-[168px] text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 mt-10">Sign
-                        up now</a>
+                        up now</a> --}}
                 </div>
                 <div class="flex flex-col w-1/2 p-10">
                     <img src="{{url("image/resic.png")}}">

@@ -1,9 +1,10 @@
 <header class="">
     <nav class="flex justify-between h-6 w-screen p-10 ">
-        <div class="grid gap-x-4 grid-cols-5 text-center items-center">
+        <div class="grid gap-x-1 grid-cols-6 text-center items-center ">
             <img src="https://i.ibb.co/pj8wrG0/image-removebg-preview-1.png" />
             <a href="/" class="cursor-pointer hover:text-blue-600 font-secondary">Beranda</a>
             <a href="/paket" class="cursor-pointer hover:text-blue-600 font-secondary">Paket</a>
+            <a href="/produk" class="cursor-pointer hover:text-blue-600 font-secondary">Produk</a>
             <a href="/tentang-kami" class="cursor-pointer hover:text-blue-600 font-secondary">Tentang Kami</a>
             @auth
             <a href="/akun" class="cursor-pointer hover:text-blue-600 font-secondary">Akun</a>
