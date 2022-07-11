@@ -25,7 +25,7 @@ class FormPemesananController extends Controller
         $pesanan = FormPemesanan::create([
             'user_id_user' => $id,
             'paket_layanan_id_paket' => $request->input('paket'),
-            'waktu_pemesanan' => date('y/m/d'),
+            'waktu_pemesanan' => date('y-m-d'),
             'alamat' => $request->input('alamat'),
             'status_pesanan' => 'N',
         ]);
